@@ -31,6 +31,8 @@ const {TOKEN_TYPES, PORT_TYPES, numberToDecimal} = require('./constants.js')
         // By now not support parameters
         // Neither math expresions
 
+        if(range.length > 4) return "1"
+
         let size = "";
 
         // Skip '['
