@@ -67,7 +67,7 @@ const {TOKEN_TYPES, PORT_TYPES, numberToDecimal} = require('./constants.js')
      * [param] or [[param1], [param2] ... [paramN]]
      */
     const _moduleHasParameters = (moduleArray) => {
-        return moduleArray[2] 
+        return moduleArray[2] && moduleArray[2].length !== 0
                 && (moduleArray[2][0]?.value === "parameter" || moduleArray[2][0][0]?.value === "parameter");
     }
 
